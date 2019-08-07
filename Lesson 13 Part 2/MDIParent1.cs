@@ -23,7 +23,7 @@ namespace Lesson_13_Part_2
         {
             Form childForm = new Form();
             childForm.MdiParent = this;
-            childForm.Text = (this.MdiChildren.Length);
+            childForm.Text = (this.MdiChildren.Length).ToString();
             childForm.Show();
         }
 

@@ -1,15 +1,15 @@
-﻿using Last_Week.Views;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Last_Week
+
+namespace Lesson_13_Part_2
 {
-    public static class Program
+    static class Program
     {
-        public static StartForm startform;
+        public static ParentForm parentform;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -18,10 +18,8 @@ namespace Last_Week
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            startform = new StartForm();
-
-            Application.Run(startform);
+            parentform = new ParentForm();
+            Application.Run(parentform);
         }
     }
 }
